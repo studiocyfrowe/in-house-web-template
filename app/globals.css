@@ -41,6 +41,10 @@ body {
   src: url('./assets/fonts/Sora-SemiBold.ttf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -137,17 +141,100 @@ input[type="range"]::-moz-range-thumb {
   background-color: #D99049; border: 0;
 }
 
-input[type="checkbox"]::-moz-user-input {
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+input[type="checkbox"] {
+  width: .75rem; height: 0.875rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: red; border: 0;
+}
+
+.checkbox_item {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1rem; 
+  text-transform: uppercase;
+  font-family: 'Sora-Regular';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox_item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem; height: 1.75rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #D99049; border: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox_item:hover input ~ .checkmark {
+  background-color: #ccc
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_item input:checked ~ .checkmark {
+  background-color: #42532A;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox_item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox_item .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* input[type="checkbox"]::-moz-user-input {
   width: .75rem; height: 0.875rem;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   background-color: #000000; border: 0;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked, input[type="checkbox"]:focus, input[type="checkbox"] {
   width: .75rem; height: 0.875rem;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   background-color: #000000; border: 0;
-}
+} */
 
 @media (max-width: 990px) {
   .shape_in_house {

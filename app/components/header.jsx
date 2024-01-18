@@ -6,6 +6,7 @@ import SectionDescription from "./sectionDescription";
 import logo_in_house from '../assets/logo_inhouse.svg'
 import shape_outline from '../assets/shape_outline.svg'
 import header_group_shape from '../assets/header_group_shape.svg'
+import Link from "next/link";
 
 export default function Header({img, title, desc, btnLink}) {
     return (
@@ -14,14 +15,14 @@ export default function Header({img, title, desc, btnLink}) {
                 <Image src={logo_in_house} alt='Logo' height={145}/>
                 <HeaderTitle label={title}/>
                 {desc ? <SectionDescription desc={desc}/> : null}
-                <div className="me-auto mt-12"><MainButton/></div>
+                <a href="#searchFlats" className="me-auto mt-12"><MainButton/></a>
             </div>
             <div className='flex z-30'>
                 <HeaderImage/>
             </div>
             <div className="lg:flex flex-row hidden lg:absolute">
-                <Image src={shape_outline} className='fixed -bottom-52 -left-48'/>
-                <Image src={header_group_shape} className='fixed top-20 right-10 scale-75'/>
+                <Image src={shape_outline} className='fixed -bottom-52 -left-48' alt="Shape outline"/>
+                <Image src={header_group_shape} className='fixed top-20 right-10 scale-75' alt="Shape outline 2"/>
             </div>
         </section>
     )

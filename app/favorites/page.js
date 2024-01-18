@@ -24,7 +24,7 @@ const favoritesInfo = {
         name: 'a1.02',
         area: 58.23,
         balcony: 13.12,
-        terrace: true,
+        terrace: 13.12,
         rooms: 3,
         available: 'WAITING'
       },
@@ -32,7 +32,7 @@ const favoritesInfo = {
         id: 3,
         name: 'a1.03',
         area: 60.23,
-        balcony: 10.12,
+        balcony: false,
         terrace: false,
         rooms: 3,
         available: 'FALSE'

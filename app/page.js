@@ -14,14 +14,14 @@ const headerInfo = {
 }
 
 const searchFlatsInfo = {
-  id: '#searchFlats',
+  id: 'searchFlats',
   title: 'Znajdź swoje wymarzone mieszkanie',
   img1: 'https://img.freepik.com/darmowe-zdjecie/3d-rendering-loft-luksusowy-zywy-pokoj-z-polka-na-ksiazki_105762-2099.jpg?w=1380&t=st=1705484660~exp=1705485260~hmac=7a90fd58a9c0c80864362fd010059be41566ba4bbf14b4b0a534ac8c284608c5',
   img2: 'https://img.freepik.com/darmowe-zdjecie/3d-rendering-loft-luksusowy-zywy-pokoj-z-polka-na-ksiazki_105762-2099.jpg?w=1380&t=st=1705484660~exp=1705485260~hmac=7a90fd58a9c0c80864362fd010059be41566ba4bbf14b4b0a534ac8c284608c5'
 }
 
 const buildingsInfo = {
-  id: '#town',
+  id: 'town',
   title: 'Dostępne oferty',
   desc: 'wybierz interesujący Cię budynek',
   items: [
@@ -50,7 +50,7 @@ const buildingsInfo = {
 }
 
 const okolicaInfo = {
-  id: '#discover-town',
+  id: 'discover-town',
   title: 'Poznaj okolicę',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a purus a mauris tincidunt fringilla et tincidunt justo. Praesent luctus pellentesque dui, vitae sodales augue tristique eu.',
   img1: 'https://img.freepik.com/darmowe-zdjecie/3d-rendering-loft-luksusowy-zywy-pokoj-z-polka-na-ksiazki_105762-2099.jpg?w=1380&t=st=1705484660~exp=1705485260~hmac=7a90fd58a9c0c80864362fd010059be41566ba4bbf14b4b0a534ac8c284608c5',
