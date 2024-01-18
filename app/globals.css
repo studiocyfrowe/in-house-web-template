@@ -25,3 +25,146 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: 'Sora-Light';
+  src: url('./assets/fonts/Sora-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Sora-Regular';
+  src: url('./assets/fonts/Sora-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Sora-SemiBold';
+  src: url('./assets/fonts/Sora-SemiBold.ttf');
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, button, th {
+  font-family: 'Sora-SemiBold';
+}
+
+p, div, span, td, thead {
+  font-family: 'Sora-Regular';
+}
+
+small {
+  font-family: 'Sora-Light';
+}
+
+::selection {
+  background-color: #D99049;
+  color: black;
+}
+
+.bg_brown {
+  background-color: #D99049;
+}
+
+.nav_link, button {
+  transition: .5 all;
+}
+
+.nav_link:hover {
+  border-bottom: #D99049 1px solid;
+}
+
+.border_brown {
+  border: #D99049 1px solid;
+}
+
+.border_green {
+  border: #42532A 1px solid;
+}
+
+.bg_green {
+  background-color: #42532A;
+}
+
+.shape_in_house {
+  width: 36rem; height: 42rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.shape_in_house_mobile {
+  width: 38.6rem; height: 45rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.shape_in_house_cards {
+  width: 18rem; height: 21rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.shape_in_house_gallery {
+  width: 24rem; height: 28rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.shape_in_house_favs {
+  width: 3rem; height: 3.5rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+input[type="range"] {
+  background-color: rgb(0,0,0,0);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #ffffff;
+  height: 0.15rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 1.5rem; height: 1.75rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #D99049; border: 0;
+}
+
+input[type="range"]::-moz-range-track {
+  background: #ffffff;
+  height: 0.15rem;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 1.5rem; height: 1.75rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #D99049; border: 0;
+}
+
+input[type="checkbox"]::-moz-user-input {
+  width: .75rem; height: 0.875rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #000000; border: 0;
+}
+
+input[type="checkbox"]:checked {
+  width: .75rem; height: 0.875rem;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: #000000; border: 0;
+}
+
+@media (max-width: 990px) {
+  .shape_in_house {
+    width: 24rem; height: 28rem;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+}
+
+th, tr, td {
+  padding: 1rem;
+  text-align: center;
+}
+
+tbody, tr, td, thead {
+  border: 1px solid #ffffff;
+}
+
+thead {
+  text-transform: uppercase;
+}
